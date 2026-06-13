@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;650;700&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Light Minimalism Base reset */
+body, .min-h-screen {
+  background-color: #F9FAFB !important;
+  color: #111827 !important;
+  font-family: var(--font-sans);
+}
+
+#applet-dashboard {
+  background-color: #F9FAFB !important;
+  color: #111827 !important;
+}
+
+/* Header style - Pristine white floating boarder style */
+header {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+header h1, header p, footer {
+  color: #111827 !important;
+}
+
+footer {
+  border-top: 1px solid #E5E7EB !important;
+  background-color: #ffffff !important;
+  color: #374151 !important;
+}
+
+/* Nav tabs */
+nav {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+nav button {
+  color: #4B5563 !important;
+}
+
+nav button[class*="border-amber-500"] {
+  border-color: #111827 !important;
+  color: #111827 !important;
+  font-weight: 600 !important;
+}
+
+/* Card boxes - bright off-white cards with thin crisp borders and shadow-xs */
+.bg-zinc-900, .bg-zinc-850, .bg-zinc-950, [id^="card-"], [id^="person-card-"], #timeline-filter-panel, #selected-companion-card, #add-place-form, #places-list-container, #add-log-modal-container, #file-explorer-drawer, #timeline-list {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Soft inline containers and row strips */
+.bg-zinc-950, .bg-zinc-950\/40, .bg-zinc-950\/60, [id^="row-"] {
+  background-color: #F9FAFB !important;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+}
+
+/* Drawer overlays */
+#file-explorer-drawer {
+  background-color: #ffffff !important;
+  border-left: 1px solid #E5E7EB !important;
+}
+
+/* Inputs styling for pristine white minimalism */
+input, select, textarea {
+  background-color: #ffffff !important;
+  border: 1px solid #D1D5DB !important;
+  color: #111827 !important;
+  border-radius: 0.75rem !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #111827 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.05) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9CA3AF !important;
+}
+
+/* Action Buttons mapping */
+button[class*="bg-zinc-900"], button[class*="bg-zinc-950"], button[title="Thư Mục Lưu Trữ"], button[title="Xuất Package (.json)"] {
+  background-color: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  color: #374151 !important;
+  font-weight: 500 !important;
+}
+
+button[class*="bg-zinc-900"]:hover, button[class*="bg-zinc-950"]:hover, button[title="Thư Mục Lưu Trữ"]:hover, button[title="Xuất Package (.json)"]:hover {
+  background-color: #F9FAFB !important;
+  color: #111827 !important;
+  border-color: #D1D5DB !important;
+}
+
+/* Strong CTA Action Button Mapping */
+button[class*="bg-amber-500"] {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  border: none !important;
+}
+
+button[class*="bg-amber-500"]:hover {
+  background-color: #1F2937 !important;
+  color: #ffffff !important;
+}
+
+/* Text categories overrides */
+.text-zinc-100, .text-zinc-200, .text-zinc-300, .text-white {
+  color: #111827 !important;
+}
+
+.text-zinc-400, .text-zinc-500 {
+  color: #4B5563 !important;
+}
+
+.text-zinc-600, .text-zinc-700 {
+  color: #6B7280 !important;
+}
+
+/* Borders */
+.border-zinc-800, .border-zinc-805, .border-zinc-850, .border-zinc-855, .border-zinc-900, .border-zinc-950 {
+  border-color: #E5E7EB !important;
+}
+
+/* Numeric keypad overrides */
+#keypad-panel button {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #E5E7EB !important;
+}
+
+#keypad-panel button:hover {
+  background-color: #F3F4F6 !important;
+}
+
+/* Badge colors overrides for premium clean minimalism */
+.bg-purple-950 {
+  background-color: #F3E8FF !important;
+  color: #6B21A8 !important;
+  border-color: #E9D5FF !important;
+}
+.bg-emerald-950 {
+  background-color: #D1FAE5 !important;
+  color: #065F46 !important;
+  border-color: #A7F3D0 !important;
+}
+.bg-rose-950 {
+  background-color: #FFE4E6 !important;
+  color: #9F1239 !important;
+  border-color: #FECDD3 !important;
+}
+.bg-cyan-950 {
+  background-color: #CFFAFE !important;
+  color: #155E75 !important;
+  border-color: #A5F3FC !important;
+}
+
+/* Danger / Legacy notices overrides */
+.border-red-900\/30, .border-red-900\/50, .border-red-955\/30 {
+  border-color: #FECACA !important;
+}
+.bg-red-950, .bg-red-950\/80, .bg-red-950\/10, .bg-red-950\/40, .bg-red-950\/20, .bg-red-950\/5 {
+  background-color: #FEF2F2 !important;
+}
+.text-red-400, .text-red-300, .text-red-200 {
+  color: #9F1239 !important;
+}
+
+/* Status markers overrides */
+.bg-emerald-950\/20, .bg-emerald-950\/80 {
+  background-color: #ECFDF5 !important;
+}
+.text-emerald-400, .text-emerald-300 {
+  color: #047857 !important;
+}
+.bg-amber-500\/10, .bg-amber-550\/5, .bg-amber-500\/15, .bg-amber-500\/20 {
+  background-color: #FEF3C7 !important;
+}
+.text-amber-400, .text-amber-300 {
+  color: #B45309 !important;
+}
+
+/* Map specific outline highlights */
+svg path.text-zinc-800 {
+  stroke: #9CA3AF !important;
+}
+svg text {
+  fill: #4B5563 !important;
+  font-weight: 500 !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "My Life",
+  "description": "A secure, minimalist digital archive for diaries, places, relationships, personal goals, and legacy wills, powered by Gemini AI.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
